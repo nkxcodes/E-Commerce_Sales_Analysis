@@ -1,0 +1,102 @@
+
+order_id,order_date,product,category,city,quantity,unit_price,payment_method,customer_id
+1001,2026-01-03,Wireless Mouse,Electronics,Delhi,2,799,UPI,C101
+1002,2026-01-04,Notebook,Stationery,Mumbai,5,80,Card,C102
+1003,2026-01-05,Running Shoes,Fashion,Bengaluru,1,2499,UPI,C103
+1004,2026-01-06,Coffee Maker,Home,Delhi,1,3299,Card,C104
+1005,2026-01-07,USB Cable,Electronics,Jaipur,3,199,Cash on Delivery,C105
+1006,2026-01-08,Backpack,Fashion,Mumbai,2,1499,UPI,C101
+1007,2026-01-09,Water Bottle,Home,Chennai,4,349,Card,C106
+1008,2026-01-10,Keyboard,Electronics,Delhi,1,1299,UPI,C107
+1009,2026-01-11,Pen Set,Stationery,Jaipur,6,120,Cash on Delivery,C108
+1010,2026-01-12,T-Shirt,Fashion,Bengaluru,3,599,UPI,C109
+1011,2026-01-13,Desk Lamp,Home,Mumbai,2,899,Card,C110
+1012,2026-01-14,Headphones,Electronics,Chennai,1,1799,UPI,C103
+1013,2026-01-15,Notebook,Stationery,Delhi,10,80,Cash on Delivery,C111
+1014,2026-01-16,Running Shoes,Fashion,Jaipur,2,2499,Card,C112
+1015,2026-01-17,USB Cable,Electronics,Mumbai,5,199,UPI,C113
+1016,2026-01-18,Water Bottle,Home,Bengaluru,2,349,Cash on Delivery,C114
+1017,2026-01-19,Keyboard,Electronics,Delhi,,1299,UPI,C115
+1018,2026-01-20,Backpack,Fashion,Chennai,1,1499,Card,C116
+1019,2026-01-21,Pen Set,Stationery,Mumbai,4,120,UPI,C117
+1020,2026-01-22,Coffee Maker,Home,Jaipur,1,3299,Card,C118
+1021,2026-01-23,Wireless Mouse,Electronics,Delhi,1,799,UPI,C102
+1022,2026-01-24,T-Shirt,Fashion,Mumbai,2,599,Cash on Delivery,C119
+1023,2026-01-25,Desk Lamp,Home,Chennai,3,899,Card,C120
+1024,2026-01-26,Headphones,Electronics,Bengaluru,2,1799,UPI,C121
+1025,2026-01-27,Notebook,Stationery,Jaipur,8,80,UPI,C122
+1026,2026-01-28,Running Shoes,Fashion,Delhi,1,2499,Card,C123
+1027,2026-01-29,USB Cable,Electronics,Mumbai,4,199,Cash on Delivery,C124
+1028,2026-01-30,Water Bottle,Home,Delhi,3,349,UPI,C125
+1029,2026-02-01,Keyboard,Electronics,Chennai,2,1299,Card,C126
+1030,2026-02-02,Backpack,Fashion,Jaipur,1,1499,UPI,C127
+1031,2026-02-03,Pen Set,Stationery,Mumbai,5,120,Cash on Delivery,C128
+1032,2026-02-04,Coffee Maker,Home,Bengaluru,1,3299,Card,C129
+1033,2026-02-05,Wireless Mouse,Electronics,Delhi,3,799,UPI,C130
+1034,2026-02-06,T-Shirt,Fashion,Chennai,4,599,Card,C131
+1035,2026-02-07,Desk Lamp,Home,Jaipur,2,899,UPI,C132
+1036,2026-02-08,Headphones,Electronics,Mumbai,1,1799,Cash on Delivery,C133
+1037,2026-02-09,Notebook,Stationery,Delhi,12,80,UPI,C134
+1038,2026-02-10,Running Shoes,Fashion,Bengaluru,1,2499,Card,C135
+1039,2026-02-11,USB Cable,Electronics,Chennai,6,199,UPI,C136
+1040,2026-02-12,Water Bottle,Home,Mumbai,2,349,Cash on Delivery,C137
+1041,2026-02-13,Keyboard,Electronics,Delhi,1,1299,UPI,C138
+1042,2026-02-14,Backpack,Fashion,Bengaluru,2,1499,Card,C139
+1043,2026-02-15,Pen Set,Stationery,Jaipur,3,120,UPI,C140
+1044,2026-02-16,Coffee Maker,Home,Chennai,1,3299,Card,C141
+1045,2026-02-17,Wireless Mouse,Electronics,Mumbai,2,799,UPI,C142
+1046,2026-02-18,T-Shirt,Fashion,Delhi,1,599,Cash on Delivery,C143
+1047,2026-02-19,Desk Lamp,Home,Bengaluru,1,899,Card,C144
+1048,2026-02-20,Headphones,Electronics,Jaipur,3,1799,UPI,C145
+1049,2026-02-21,Notebook,Stationery,Mumbai,7,80,Cash on Delivery,C146
+1050,2026-02-22,Running Shoes,Fashion,Delhi,2,2499,Card,C147
+1051,2026-02-23,USB Cable,Electronics,Chennai,4,199,UPI,C148
+1052,2026-02-24,Water Bottle,Home,Jaipur,5,349,Cash on Delivery,C149
+1053,2026-02-25,Keyboard,Electronics,Mumbai,1,1299,Card,C150
+1054,2026-02-26,Backpack,Fashion,Delhi,2,1499,UPI,C151
+1055,2026-02-27,Pen Set,Stationery,Bengaluru,6,120,UPI,C152
+1056,2026-02-28,Coffee Maker,Home,Mumbai,1,3299,Card,C153
+1057,2026-03-01,Wireless Mouse,Electronics,Chennai,2,799,UPI,C154
+1058,2026-03-02,T-Shirt,Fashion,Jaipur,3,599,Cash on Delivery,C155
+1059,2026-03-03,Desk Lamp,Home,Delhi,1,899,Card,C156
+1060,2026-03-04,Headphones,Electronics,Bengaluru,2,1799,UPI,C157
+1061,2026-03-05,Notebook,Stationery,Mumbai,9,80,Cash on Delivery,C158
+1062,2026-03-06,Running Shoes,Fashion,Chennai,1,2499,Card,C159
+1063,2026-03-07,USB Cable,Electronics,Delhi,5,199,UPI,C160
+1064,2026-03-08,Water Bottle,Home,Bengaluru,2,349,Cash on Delivery,C161
+1065,2026-03-09,Keyboard,Electronics,Jaipur,1,1299,Card,C162
+1066,2026-03-10,Backpack,Fashion,Mumbai,1,1499,UPI,C163
+1067,2026-03-11,Pen Set,Stationery,Delhi,4,120,Cash on Delivery,C164
+1068,2026-03-12,Coffee Maker,Home,Chennai,1,3299,Card,C165
+1069,2026-03-13,Wireless Mouse,Electronics,Mumbai,2,799,UPI,C166
+1070,2026-03-14,T-Shirt,Fashion,Bengaluru,2,599,Cash on Delivery,C167
+1071,2026-03-15,Desk Lamp,Home,Jaipur,3,899,Card,C168
+1072,2026-03-16,Headphones,Electronics,Delhi,1,1799,UPI,C169
+1073,2026-03-17,Notebook,Stationery,Chennai,10,80,Cash on Delivery,C170
+1074,2026-03-18,Running Shoes,Fashion,Mumbai,1,2499,Card,C171
+1075,2026-03-19,USB Cable,Electronics,Delhi,3,199,UPI,C172
+1076,2026-03-20,Water Bottle,Home,Bengaluru,4,349,Cash on Delivery,C173
+1077,2026-03-21,Keyboard,Electronics,Jaipur,2,1299,Card,C174
+1078,2026-03-22,Backpack,Fashion,Chennai,1,1499,UPI,C175
+1079,2026-03-23,Pen Set,Stationery,Mumbai,5,120,Cash on Delivery,C176
+1080,2026-03-24,Coffee Maker,Home,Delhi,1,3299,Card,C177
+1081,2026-03-25,Wireless Mouse,Electronics,Delhi,1,799,UPI,C101
+1082,2026-03-26,T-Shirt,Fashion,Mumbai,2,599,Cash on Delivery,C102
+1083,2026-03-27,Desk Lamp,Home,Chennai,1,899,Card,C103
+1084,2026-03-28,Headphones,Electronics,Bengaluru,2,1799,UPI,C104
+1085,2026-03-29,Notebook,Stationery,Jaipur,6,80,Cash on Delivery,C105
+1086,2026-03-30,Running Shoes,Fashion,Delhi,1,2499,Card,C106
+1087,2026-04-01,USB Cable,Electronics,Mumbai,4,199,UPI,C107
+1088,2026-04-02,Water Bottle,Home,Chennai,2,349,Cash on Delivery,C108
+1089,2026-04-03,Keyboard,Electronics,Bengaluru,1,1299,Card,C109
+1090,2026-04-04,Backpack,Fashion,Jaipur,2,1499,UPI,C110
+1091,2026-04-05,Pen Set,Stationery,Delhi,3,120,Cash on Delivery,C111
+1092,2026-04-06,Coffee Maker,Home,Mumbai,1,3299,Card,C112
+1093,2026-04-07,Wireless Mouse,Electronics,Chennai,2,799,UPI,C113
+1094,2026-04-08,T-Shirt,Fashion,Bengaluru,1,599,Cash on Delivery,C114
+1095,2026-04-09,Desk Lamp,Home,Jaipur,2,899,Card,C115
+1096,2026-04-10,Headphones,Electronics,Delhi,1,1799,UPI,C116
+1097,2026-04-11,Notebook,Stationery,Mumbai,8,80,Cash on Delivery,C117
+1098,2026-04-12,Running Shoes,Fashion,Chennai,2,2499,Card,C118
+1099,2026-04-13,USB Cable,Electronics,Bengaluru,5,199,UPI,C119
+1100,2026-04-14,Water Bottle,Home,Delhi,3,349,Cash on Delivery,C120

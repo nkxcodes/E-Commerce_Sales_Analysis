@@ -107,5 +107,38 @@ def main():
     print('Remaining exact duplicate rows: ')
     print(clean_df.duplicated().sum())
 
+    print('========== KEY PERFORMANCE INDICATORS (KPIs) ==========')
+    total_revenue = (clean_df['quantity'] * clean_df['unit_price']).sum()
+    total_orders = clean_df['order_id'].count()
+    units_sold = clean_df['quantity'].sum()
+    average_order_value = total_revenue / total_orders
+    average_selling_price = clean_df['unit_price'].mean()
+    best_selling_product = clean_df.loc[
+        clean_df['quantity'].idxmax(),
+        'product'
+    ]
+    top_revenue_category = clean_df.groupby('category')['unit_price'].sum().idxmax()
+
+    print()
+    print(f'Total Revenue: {total_revenue}')
+
+    print()
+    print(f'Total Orders: {total_orders}')
+
+    print()
+    print(f'Units Sold: {units_sold}')
+
+    print()
+    print(f'Average Order Value: {average_order_value}')
+
+    print()
+    print(f'Average Selling Price: {average_selling_price}')
+
+    print()
+    print(f'Best Selling Product: {best_selling_product}')
+
+    print()
+    print(f'Top Revenue Category: {top_revenue_category}')
+
 if __name__ == '__main__':
     main()

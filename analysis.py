@@ -170,6 +170,10 @@ def main():
     category_with_most_units = clean_df.groupby('category')['quantity'].sum().idxmax()
     top_5_products = clean_df.groupby('category')['revenue'].sum().sort_values(ascending=False).head(5)
     products_with_highest_quantity_sold = clean_df.groupby('category')['quantity'].sum().sort_values(ascending=False).head(5)
+    product_sales = clean_df.groupby('product').agg(
+        total_revenue = ('revenue', 'sum'),
+        sales_volume = ('quantity', 'sum')
+    )
 
     print()
     print(f'Category with highest revenue: {category_with_highest_revenue}')
@@ -188,5 +192,21 @@ def main():
 
     print()
     print(products_with_highest_quantity_sold)
+
+    print()
+    print(product_sales)
+
+    print()
+    print(product_sales.sort_values(by = 'total_revenue', ascending=False).head(1))
+
+    print()
+    print(product_sales.sort_values(by = 'sales_volume', ascending=False).head(1))
+
+    product_sales = product_sales.sort_values(
+        by = 'total_revenue', ascending=False
+    )
+
+    print()
+    print(product_sales)
 if __name__ == '__main__':
     main()

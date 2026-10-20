@@ -223,5 +223,17 @@ def main():
 
     print()
     print(category_analysis.round(2))
+
+    print()
+    print('========== MONTHLY AND GEOGRAPHICAL ANALYSIS ==========')
+
+    clean_df['order_month'] = clean_df['order_date'].dt.to_period('M')
+    monthly_revenue = clean_df.groupby('order_month')['revenue'].sum()
+
+    print()
+    print('Monthly revenue: ')
+
+    print()
+    print(monthly_revenue)
 if __name__ == '__main__':
     main()

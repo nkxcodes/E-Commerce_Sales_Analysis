@@ -109,6 +109,7 @@ def main():
 
     print('========== KEY PERFORMANCE INDICATORS (KPIs) ==========')
     total_revenue = (clean_df['quantity'] * clean_df['unit_price']).sum()
+    clean_df['revenue'] = clean_df['quantity'] * clean_df['unit_price']
     total_orders = clean_df['order_id'].count()
     units_sold = clean_df['quantity'].sum()
     average_order_value = total_revenue / total_orders
@@ -139,6 +140,14 @@ def main():
 
     print()
     print(f'Top Revenue Category: {top_revenue_category}')
+
+    print()
+    print('========== PRODUCT AND CATEGORY ANALYSIS ==========')
+
+    category_with_highest_revenue = clean_df.groupby('category')['revenue'].sum().idxmax()
+
+    print()
+    print(f'Category with highest revenue: {category_with_highest_revenue}')
 
 if __name__ == '__main__':
     main()

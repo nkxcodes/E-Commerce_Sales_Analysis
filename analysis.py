@@ -107,6 +107,12 @@ def main():
     print('Remaining exact duplicate rows: ')
     print(clean_df.duplicated().sum())
 
+    print()
+    print('========== FEATURE ENGINEERING ==========')
+    
+    clean_df['revenue'] = clean_df['quantity'] * clean_df['unit_price']
+
+    print()
     print('========== KEY PERFORMANCE INDICATORS (KPIs) ==========')
     total_revenue = (clean_df['quantity'] * clean_df['unit_price']).sum()
     clean_df['revenue'] = clean_df['quantity'] * clean_df['unit_price']

@@ -111,6 +111,22 @@ def main():
     print('========== FEATURE ENGINEERING ==========')
     
     clean_df['revenue'] = clean_df['quantity'] * clean_df['unit_price']
+    clean_df['order_date'] = pd.to_datetime(clean_df['order_date'], errors='coerce')
+    clean_df['order_month'] = (clean_df['order_date'].dt.month_name())
+    clean_df['order_year'] = clean_df['order_date'].dt.year
+    clean_df['day_of_week'] = (clean_df['order_date'].dt.day_name())
+
+    print()
+    print(clean_df[['quantity', 'unit_price', 'revenue']].head(10))
+
+    print()
+    print(clean_df[['order_date', 'order_month']].head(10))
+
+    print()
+    print(clean_df[['order_date', 'order_year']].head(10))
+
+    print()
+    print(clean_df[['order_date', 'day_of_week']].head(10))
 
     print()
     print('========== KEY PERFORMANCE INDICATORS (KPIs) ==========')
@@ -151,9 +167,26 @@ def main():
     print('========== PRODUCT AND CATEGORY ANALYSIS ==========')
 
     category_with_highest_revenue = clean_df.groupby('category')['revenue'].sum().idxmax()
+    category_with_most_units = clean_df.groupby('category')['quantity'].sum().idxmax()
+    top_5_products = clean_df.groupby('category')['revenue'].sum().sort_values(ascending=False).head(5)
+    products_with_highest_quantity_sold = clean_df.groupby('category')['quantity'].sum().sort_values(ascending=False).head(5)
 
     print()
     print(f'Category with highest revenue: {category_with_highest_revenue}')
 
+    print()
+    print(f'Category with most units: {category_with_most_units}')
+
+    print()
+    print('Top 5 products: ')
+
+    print()
+    print(top_5_products)
+
+    print()
+    print('Products with highest quantity sold: ')
+
+    print()
+    print(products_with_highest_quantity_sold)
 if __name__ == '__main__':
     main()

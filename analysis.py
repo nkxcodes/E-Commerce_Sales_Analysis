@@ -174,6 +174,15 @@ def main():
         total_revenue = ('revenue', 'sum'),
         sales_volume = ('quantity', 'sum')
     )
+    category_revenue = clean_df.groupby('category')['revenue'].sum()
+    category_percentage = (category_revenue / category_revenue.sum()) * 100
+    category_analysis = pd.DataFrame({
+        'total_revenue': category_revenue,
+        'revenue_percentage': category_percentage
+    })
+    category_analysis = category_analysis.sort_values(
+        by = 'revenue_percentage', ascending=False
+    )
 
     print()
     print(f'Category with highest revenue: {category_with_highest_revenue}')
@@ -208,5 +217,11 @@ def main():
 
     print()
     print(product_sales)
+
+    print()
+    print('Category analysis: ')
+
+    print()
+    print(category_analysis.round(2))
 if __name__ == '__main__':
     main()

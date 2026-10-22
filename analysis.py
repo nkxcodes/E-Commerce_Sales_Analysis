@@ -235,6 +235,7 @@ def main():
         'total_orders': monthly_orders
     })
     city_revenue = (clean_df.groupby('city')['revenue'].sum().sort_values(ascending=False))
+    city_orders = (clean_df.groupby('city')['order_id'].nunique().sort_values(ascending=False))
 
     print()
     print('Monthly revenue: ')
@@ -283,5 +284,11 @@ def main():
 
     plt.savefig('charts/city_revenue.png', dpi=300, bbox_inches='tight')
     plt.close()
+
+    print()
+    print('City orders: ')
+
+    print()
+    print(city_orders)
 if __name__ == '__main__':
     main()

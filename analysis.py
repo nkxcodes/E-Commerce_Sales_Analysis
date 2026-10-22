@@ -235,5 +235,19 @@ def main():
 
     print()
     print(monthly_revenue)
+
+    monthly_revenue.plot(
+        kind='line',
+        marker='o',
+        title='Monthly Revenue Trend'
+    )
+
+    plt.xlabel('Month')
+    plt.ylabel('Revenue (₹)')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+
+    plt.savefig('charts/monthly_revenue.png', dpi=300, bbox_inches='tight')
+    plt.close()
 if __name__ == '__main__':
     main()

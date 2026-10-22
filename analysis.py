@@ -234,6 +234,7 @@ def main():
         'total_revenue': monthly_revenue,
         'total_orders': monthly_orders
     })
+    city_revenue = (clean_df.groupby('city')['revenue'].sum().sort_values(ascending=False))
 
     print()
     print('Monthly revenue: ')
@@ -266,5 +267,11 @@ def main():
 
     print()
     print(monthly_analysis)
+
+    print()
+    print('City revenue: ')
+
+    print()
+    print(city_revenue)
 if __name__ == '__main__':
     main()

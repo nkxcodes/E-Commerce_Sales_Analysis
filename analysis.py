@@ -236,6 +236,7 @@ def main():
     })
     city_revenue = (clean_df.groupby('city')['revenue'].sum().sort_values(ascending=False))
     city_orders = (clean_df.groupby('city')['order_id'].nunique().sort_values(ascending=False))
+    payment_revenue = (clean_df.groupby('payment_method')['revenue'].sum().sort_values(ascending=False))
 
     print()
     print('Monthly revenue: ')
@@ -290,5 +291,11 @@ def main():
 
     print()
     print(city_orders)
+
+    print()
+    print('Payment revenue: ')
+
+    print()
+    print(payment_revenue)
 if __name__ == '__main__':
     main()

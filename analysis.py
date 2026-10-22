@@ -229,6 +229,11 @@ def main():
 
     clean_df['order_month'] = clean_df['order_date'].dt.to_period('M')
     monthly_revenue = clean_df.groupby('order_month')['revenue'].sum()
+    monthly_orders = (clean_df.groupby('order_month')['order_id'].nunique())
+    monthly_analysis = pd.DataFrame({
+        'total_revenue': monthly_revenue,
+        'total_orders': monthly_orders
+    })
 
     print()
     print('Monthly revenue: ')
@@ -249,5 +254,17 @@ def main():
 
     plt.savefig('charts/monthly_revenue.png', dpi=300, bbox_inches='tight')
     plt.close()
+
+    print()
+    print('Monthly orders: ')
+
+    print()
+    print(monthly_orders)
+
+    print()
+    print('Monthly analysis: ')
+
+    print()
+    print(monthly_analysis)
 if __name__ == '__main__':
     main()

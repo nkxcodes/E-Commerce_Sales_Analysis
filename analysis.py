@@ -273,5 +273,15 @@ def main():
 
     print()
     print(city_revenue)
+
+    city_revenue.plot(kind='bar', title='Revenue by City')
+
+    plt.xlabel('City')
+    plt.ylabel('Revenue (₹)')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+
+    plt.savefig('charts/city_revenue.png', dpi=300, bbox_inches='tight')
+    plt.close()
 if __name__ == '__main__':
     main()
